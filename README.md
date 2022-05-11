@@ -16,6 +16,6 @@
 
 ### Business rules
 
-- [] Should not be able to create a new user when username already exists
+- [X] Should not be able to create a new user when username already exists
 - [] Should not be able to mark a non existing todo as done
 - [] Should not be able to delete a non existing todo

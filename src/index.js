@@ -11,11 +11,20 @@ app.use(express.json())
 const users = []
 
 function checksExistsUserAccount(request, response, next) {
-  // Complete aqui
+  const { username } = request.headers
+
+  const user = users.find((user) => user.username === username)
+
+  if(user){
+    return response.status(400).json({error: 'Username already exists!'})
+  }
+
+  return next()
 }
 
 app.post('/users', checksExistsUserAccount, (request, response) => {
-  const { name, username } = request.body
+  const { name } = request.body
+  const { username } = request.headers
 
   users.push({
     id: uuidv4(),

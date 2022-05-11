@@ -5,8 +5,8 @@
 ### Requirements survey
 
 - [X] Should be able to create a new user
-- [] Should be able to list all user's todo
-- [] Should be able to create a new todo
+- [X] Should be able to list all user's todo
+- [X] Should be able to create a new todo
 - [] Should be able to update a todo
 - [] Should be able to mark a todo as done
 - [] Should be able to delete a todo
